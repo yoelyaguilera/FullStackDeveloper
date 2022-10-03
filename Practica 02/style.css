@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(173, 173, 173);
+}
+header 
+{
+    background-color: rgb(231, 231, 231); 
+    margin: 0px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(173, 173, 173);
+    height: 50px;
+    color: azure;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.section{
+
+    background: rgb(231 231 231); 
+    width: 70%;
+    margin: 0px 4px 0px 0px;
+    padding-bottom: 25px;
+}
+
+.info{
+    background-color: rgb(173, 173, 173);
+    margin: 25px;
+    width: 70%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.img{
+    background-color: rgb(173, 173, 173);
+    margin: 25px 25px 25px 0px;
+    width: 30%;
+    display: flex;
+    margin-bottom: 0px;
+}
+section {
+    display: flex;
+}
+p {
+    padding: 20px;
+    text-align: justify;
+}
+section h1, aside h1 {
+    padding: 20px 20px 0px 20px;
+}
+
+.container {
+    display: flex;
+}
+
+aside{
+    margin: 0px 0px 0px 4px;
+    float: right; 
+    background: rgb(231 231 231); 
+    width: 30%;
+}
+
+.mapa{
+    padding: 25px;
+}
+
+.mapa iframe{
+    width: 100%;
+} 
+footer{
+    background: rgb(231 231 231); 
+    margin-top: 8px;
+    padding-bottom: 20px;
+}
+
+footer a {
+    color: black;
+}
+
+address, details{
+    padding-left: 20px;
+}
+
+footer p {
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

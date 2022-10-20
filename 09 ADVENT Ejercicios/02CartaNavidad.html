@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    const carta = 'bici coche  balón _playstation bici coche peluche'
+    const lista = carta.split(' ') 
+    console.log(lista)
+
+    const occurrences = lista.reduce(function (acc, curr) {
+        return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+    }, {});
+
+console.log(occurrences) 
+
+    listGifts(carta)
+    function listGifts(carta) {
+        for (const regalo of lista) {
+                if(regalo == ""){
+                    console.log("Regalo vacio: " + regalo)
+                }else if(regalo != ""){
+                        if (regalo.indexOf("_") != 0 ) {
+                            console.log("Este regalos: " + regalo)
+                        }else if(regalo.indexOf("_") > -1){
+                            console.log("Regalo eliminado: " + regalo)
+                        }
+                }
+        }
+
+    return {}
+    }
+
+    
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick= "clearInterval(tiempo)">detener</button>
+<script >
+    var objeto1 = {
+        gestor: 'morado',
+        cliente: '001',
+        mensaje: '2017-01-01',
+        transferencia: '1'
+    };
+    var objeto2 = {
+        gestor: 'rojoo',
+        cliente: '002',
+        mensaje: '2017-01-02',
+        transferencia: '2'
+    };
+    var objeto3 = {
+        gestor: 'verde',
+        cliente: '003',
+        mensaje: '2017-01-03',
+        transferencia: '3'
+    };
+
+
+    function objetos (gestor,cliente,mensaje,transferencia){
+        this.gestor = gestor;
+    }
+    console.log("Objetos");
+    console.log(objeto1);
+    console.log(objeto2);
+    console.log(objeto3);
+
+    console.log("Array de Objetos");
+    var arrayDeObjetos = [objeto1, objeto2, objeto3];
+    console.log(arrayDeObjetos);
+
+    console.log("Transformado de Array a JSON");
+    var deArray_Json= JSON.stringify(arrayDeObjetos);
+    console.log(typeof(deArray_Json));
+    console.log(deArray_Json);
+
+    console.log("Transformado de String a Objeto");
+    var deString_Object = JSON.parse(deArray_Json);
+    console.log(typeof(deString_Object));
+    console.log(deString_Object);
+
+    function gestorTiempo() {
+        var indice = deString_Object.length;
+        for (let i=0; i < indice; i++) {
+            console.log(deString_Object[i].gestor)
+        }
+    }
+    var tiempo = window.setInterval(gestorTiempo, 1000);
+
+</script>
+
+
+
+</body>
+</html>

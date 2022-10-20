@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+
+<button (click)="getPrevPage()">&lt; Prev</button>
+<button (click)="getNextPage()">Next &gt;</button>
+
+<section>
+  <div  *ngFor="let pokemon of pokemons">
+    <a href="{{pokemon.url}}">{{pokemon.name}}</a>
+
+  </div>
+</section>

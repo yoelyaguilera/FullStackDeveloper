@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+   <!-- <h1>Inicio de sesion</h1>
+
+     <form>
+        <label> Usuario</label>
+        <input id="usu" type="text">
+
+        <label > Contraseña</label>
+        <input id="contr" type="text">
+
+        <button onclick="prueba()">Entrar</button>
+    </form> -->
+
+<script>
+    prueba();
+   function prueba(){ 
+
+        const  u = ["Usu1","Usu2","Usu3"];
+        const  c = ["Con1","Con2","Con3"];
+        
+        const usu = prompt("introduce un nombre");
+        const con = prompt("introduce un contra");
+
+        for (let i = 0; i < u.length; i++) {
+            if(usu == u[i] && con == c[i]){
+                console.log("Entro");
+            }else {
+                console.log("Contra incorrecta");
+            }        
+        }
+   };
+
+</script>
+</body>
+</html>
